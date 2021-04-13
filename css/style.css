@@ -1,0 +1,265 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Calibri", "Lato", "Verdana", sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  color: #666666;
+}
+
+nav {
+	position: fixed;
+  padding: 2%;
+  width: 100%;
+	z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  background: #ffffff;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+}
+
+footer {
+  padding: 25px;
+  opacity: 0.7;
+  color: #ffffff;
+  background: #868686;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+img {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+img:hover {
+	opacity: 0.55;
+}
+
+button {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.71;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url("../img/image1.jpg");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("../img/image2.jpg");
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url("../img/image3.jpg");
+  min-height: 400px;
+}
+
+.section {
+  padding: 80px 90px;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #f3f3f3;
+  color: #666666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #dddddd;
+}
+
+.caption .border {
+  padding: 25px;
+  background-color: #111;
+  color: #fff;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.caption .border.transparent {
+  background-color: transparent;
+}
+
+.about {
+  height: 750px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+	align-items: flex-start;
+}
+
+.inline p {
+  margin: 25px;
+}
+
+
+.popular-posts {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  background-color: #ffffff;
+}
+
+.post {
+  margin: 15px;
+  margin-bottom: 100px;
+  width: 30%;
+  max-width: 380px;
+  max-height: 345px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 5px;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.post:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.post img {
+  border-radius: 5px 5px 0 0;
+}
+
+.post-text {
+  padding: 2px 16px;
+}
+
+
+
+.gallery {
+	margin: 20px;
+}
+
+#x {
+	position: absolute;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	right: 0;
+	top: 0;	
+}
+
+#x:hover {
+	cursor: pointer;
+	background-color: #cccccc;
+	color: #000000;
+}
+
+#modal {
+	z-index: 3;
+	display: none;
+	position: fixed;
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	background-color:rgba(0,0,0,0.96);
+	color: #ffffff;
+}
+
+#modal-content {
+	display: block;
+	position: relative;
+	width: auto;
+	margin: auto;
+	padding: 0;
+	outline: 0;
+	width: 600px;
+	text-align: center;
+	background-color: transparent;
+	animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0)
+	} 
+	to {
+		transform:scale(1)
+	}
+}
+
+iframe {
+	margin-right: 25px;
+	border: 0;
+ 	background: none;
+ 	box-shadow: none;
+}
+
+.status {
+	font-size: 30px;
+}
+
+.stat-section {
+	padding: 13px!important;
+}
+
