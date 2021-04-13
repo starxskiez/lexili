@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - Minimalist Blog: Tailwind Toolbox</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link href="https://Minimalist.coolcodersj.repl.co/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/tomorrow-night.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<style>
+		html {
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+		}
+
+
+
+		.leftPanelImg {
+			width: 10%;
+			float: left;
+		}
+
+		.leftPanelImg img {
+			border-radius: 100%
+		}
+
+		.rightPanel {
+			width: 85%;
+			float: left;
+			margin-left: 1%;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.form {
+			padding: 10px;
+			border: 1px solid #000;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		.form input[type="text"],
+		.form textarea,
+		.form imput[type="date"] {
+			border: 1px solid #000;
+			padding: 2px;
+			width: 300px;
+		}
+	</style>
+
+</head>
+
+<body class="bg-gray-100 text-gray-700 font-sans quicksand">
+	
+	<div class="topnav text">
+		<a class="brand" href="#">Lexi Li</a>
+		<div class="topnavitem">
+			<a class="active topnavitem" href="../index.html">Home</a>
+			</div>
+	</div> 
+	
+  <h1>First Post!</h1>
+
+  <p class="mb-8">Hello Guys, This is my first blog post, where I will be trying out all the ways to style this page. Lets start with the headers.</p><br>
+
+  <h2>Text:</h1>
+
+  <h1>Header 1</h1>
+
+  <h2>Header 2</h2>
+
+  <h3>Header 3</h3>
+
+  <h4>Header 4</h4>
+
+  <h5>Header 5</h5>
+
+  <h6>Header 6</h6><br>
+
+	<p>Oh, and lets try some centered text!</p>
+
+	<h4 class="center">Centered Text</h4>
+
+	<p>A paragraph...<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil praesentium molestias, totam quidem sed sint veniam, labore natus officia distinctio, numquam in deserunt. Dicta, voluptas tempora velit quas laborum reprehenderit iusto hic impedit delectus ea nisi sapiente eum dolorum commodi alias, fuga magnam rerum quo fugiat iure obcaecati, itaque tempore voluptates porro? Aut officiis blanditiis aperiam quod id magni, voluptas dolor natus ipsam quia mollitia! Et ipsa ipsam vel, at odit necessitatibus dolore, facilis non repellat, ipsum tenetur laborum.</p>
+
+	<i>Italics, </i>
+
+	<u>Underline, </u>
+
+	<b>Bold, </b>
+
+	<s>Strikethrough, </s>
+
+	<i><u><b><s>AND ALL OF THEM COMBINED</s></b></u></i><br><br>
+
+	<a href="../index.html">And, lets not forget to add a link!</a><br><br>
+
+	<h4 class="center">Line Rule</h4><hr><br>
+
+	<p>Lets try a list now.</p>
+
+	<p>Unorganized List:</p>
+
+	<ul>
+		<li>List Item One</li>
+		<li>List Item Two</li>
+	</ul>
+
+	<p>Hmm, How about an organized list?</p>
+
+	<ol>
+		<li>List Item One</li>
+		<li>List Item Two</li>
+	</ol>
+
+	<p>Much better.</p><br>
+
+	<p>Code, code, CODE!</p>
+
+	<code>print("Hello World")</code><br><br>
+
+	<code class="code">print("Hello World")</code>
+
+	<p>I want <b>SYNTAX HIGHLIGHTING!</b></p>
+
+	<pre>
+		<code class="language-python">                
+			for i in range(10):
+				print("Hello World with Syntax Highlighting!")
+		</code>
+	</pre>    
+
+	<p>Whats your favorite drink on the menu? Well where is the menu? Oh, right, the dropdown menu is right below!</p>
+
+	<select class="select center">
+		<option selected>Coffee</option>
+		<option>Tea</option>
+		<option>Juice</option>
+		<option>Cocktail</option>
+	</select>
+
+	<p>Yea, I'm REALLY lazy so, if you want to know more, go <a href="https://minimalist.coolcodersj.repl.co/">here</a>. This is what I am gonna use to write my posts! I'll probably edit this post later, sooo yeah. Bye!</p>
+
+	<p>PS, If you are curious why this has a different theme than my home page, it's because I actually want my blog to be sperate from my home page. I will create an all post section soon.</p>
+
+	<br><br><br>
+
+	<div class='form'>
+		<h5>Add Comments</h5>
+		Name: <input type="text" id="name" /> <br/><br /> Date: <input type="date" id="date" /> <br/><br /> Body: <textarea rows="5" col "30" id="bodyText"></textarea><br /><br />
+		<input type="button" id="addComent" value="Add Comment" />
+	</div>
+	<div id='container'>
+	
+	</div>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script>
+		function render(data) {
+
+		var html = "<div class='commentBox'><div class='leftPanelImg'><img src='http://via.placeholder.com/100x100'/></div><div class='rightPanel'><span>" + data.name + "</span><div class='date'>" + data.date + "</div><p>" + data.body + "</p></div><div class='clear'></div></div>";
+
+		$('#container').append(html);
+
+		}
+
+		$(document).ready(function() {
+
+		var coment = [{
+			"name": "Lexi",
+			"date": "April 04, 2021",
+			"body": "Test Comment System. Please use POWR for now."
+		}];
+
+		for (var i = 0; i < coment.length; i++) {
+			render(coment[i]);
+
+		}
+
+		$('#addComent').click(function() {
+			var addObj = {
+				"name": $('#name').val(),
+				"date": $('#date').val(),
+				"body": $('#bodyText').val()
+			};
+
+			coment.push(addObj);
+			render(addObj);
+			$('#name').val('');
+			$('#date').val('dd/mm/yyyy');
+			$('#bodyText').val('');
+		});
+		});
+	</script>
+	
+	<div class="powr-comments" id="a349d838_1618283652"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+</body>
+</html>
